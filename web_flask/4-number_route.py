@@ -15,6 +15,7 @@ def hello_hbnb():
     """
     return 'Hello HBNB!'
 
+
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
     """
@@ -22,12 +23,14 @@ def hbnb():
     """
     return "HBNB"
 
+
 @app.route('/c/<text>', strict_slashes=False)
 def c(text):
     """
     replace any underscores in <text> with slashes.
     """
     return 'C {}'.format(text.replace("_", " "))
+
 
 @app.route("/python", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
